@@ -6,15 +6,13 @@ function solveEquation(a, b, c) {
 	if (discriminant === 0) {
 		let root = (-b) / (2 * a);
 		result.push(root)
-		return result
 	} else if (discriminant > 0) {
 		let root1 = ((-b) + Math.sqrt(discriminant)) / (2 * a)
 		let root2 = ((-b) - Math.sqrt(discriminant)) / (2 * a)
 		result.push(root1, root2)
-		return result
 	}
+  return result
 }
-return result
 
 
 
